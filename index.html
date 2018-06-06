@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript">
+    document.addEventListener("deviceready", function() {
+    
+    //FCMPlugin.onTokenRefresh( onTokenRefreshCallback(token) );
+//Note that this callback will be fired everytime a new token is generated, including the first time.
+FCMPlugin.onTokenRefresh(function(token){
+    alert( 'token refresh:'+token );
+});
+
+//FCMPlugin.getToken( successCallback(token), errorCallback(err) );
+//Keep in mind the function will return null if the token has not been established yet.
+FCMPlugin.getToken(function(token){
+    alert('token get:'+token);
+});
+    
+    FCMPlugin.onNotification(function(data){
+        if(data.wasTapped){
+          alert('tapped:'+JSON.stringify(data));
+        }else{
+          alert('not tapped'+JSON.stringify(data));
+        }
+      });	
+
+    }, false);
+
+    </script>
+    
+  </head>
+  <body>
+    <h1>Hello, World of FCM!</h1>
+    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "435961353753",
+    "firebase_url": "https://fireapi-206423.firebaseio.com",
+    "project_id": "fireapi-206423",
+    "storage_bucket": "fireapi-206423.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435961353753:android:18be1403a7abbb65",
+        "android_client_info": {
+          "package_name": "com.unab.eli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435961353753-9vuapnmbftu3gncbvi2qk4ls8ef4ml56.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "435961353753-9vuapnmbftu3gncbvi2qk4ls8ef4ml56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu_6yFIveyHE6uE-PaFDvedwTHXAi7oco"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
